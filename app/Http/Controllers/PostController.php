@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function index(){
-        return view('posts.index',[
-            'posts' => Post::take(5)->get()
-        ]);
+        return view('posts.index');
     }
 }
